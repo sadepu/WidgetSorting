@@ -1,0 +1,20 @@
+.column{
+	float:left;
+	height:auto !important;
+	/*min-height:400px;*/
+	background: #F0F0F0;
+	margin: 5px 5px 5px 5px ;
+}
+.column .widget{
+	margin: 5px 5px 5px 5px ;
+	/*width: auto! important;*/
+	background: #22FEE1;
+	/*width: 150px; */
+	/*height: 150px;*/
+}
+.column .widget .content{
+	overflow: hidden;
+	background: #11F0FF;
+}
+.header .wdgtControls  {float: right;}
+.header .wdgtControls  .wdgtCollapse,.header .wdgtControls  .wdgtDrag,.header .wdgtControls  .wdgtRemove{padding : 3px; cursor: pointer;}

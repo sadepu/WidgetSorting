@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Widgets Sorting</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+	<link rel="stylesheet" type="text/css" href="css/WidgetStyles.css"/>
+    
+	<script type="text/javascript" src="js/jquery-1.9.0.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui.js" ></script>
+	<script type="text/javascript" src="js/WidgetSortable.js" ></script>
+	<script type="text/javascript" >
+	    $(document).ready(function () {
+	        $("#widgetController").WidgetSortable({
+	            handle: '.wdgtDrag',
+	            collapse: true,
+	            sortable: true,
+	            removable: true,
+	            enableResize: true
+	        });
+	    })
+
+	</script>
+</head>
+<body>
+<div id="widgetController">
+    <div class="column" id="column1">
+        <div class="widget" id="widget1">
+            <div class="header">This is header 1-1</div>
+            <div class="content ">This is my Content 1-1</div>
+        </div>
+        <div class="widget" id="Div1">
+            <div class="header">This is header 2-1</div>
+            <div class="content ">This is my Content 2-1</div>
+        </div>
+        <div class="widget" id="Div2">
+            <div class="header">This is header 3-1</div>
+            <div class="content ">This is my Content 3-1</div>
+        </div>
+        <div class="widget" id="Div5">
+            <div class="header">This is header 4-1</div>
+            <div class="content ">This is my Content 4-1</div>
+        </div>
+    </div>
+    <div class="column" id="column2">
+        <div class="widget" id="Div3">
+            <div class="header">This is header 1-2</div>
+            <div class="content ">This is my Content 1-2</div>
+        </div>
+        <div class="widget" id="Div6">
+            <div class="header">This is header 2-2</div>
+            <div class="content ">This is my Content 2-2</div>
+        </div>
+        <div class="widget" id="Div7">
+            <div class="header">This is header 3-2</div>
+            <div class="content ">This is my Content 3-2</div>
+        </div>
+        <div class="widget" id="Div8">
+            <div class="header">This is header 4-2</div>
+            <div class="content ">This is my Content 4-2</div>
+        </div>
+        <div class="widget" id="Div4">
+            <div class="header">This is header 5-2</div>
+            <div class="content ">This is my Content 5-2</div>
+        </div>
+        <div class="widget" id="Div9">
+            <div class="header">This is header 6-2</div>
+            <div class="content ">This is my Content 6-2</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
